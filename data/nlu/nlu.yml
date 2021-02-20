@@ -1,0 +1,177 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - good morning
+    - good evening
+    - hey there
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you around
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - yeah
+    - yes,am interested
+    - yes,I heard about it
+    - yaa
+    - ok sure
+    - great
+    - cool
+    - ok
+    - okay
+    - sure
+    - interested
+    - yes,i may be interested.
+    - can
+    - I am keen, interested.
+    - okay,call me after office hours.
+    - yes, call me after working hours.
+
+- intent: need_info
+  examples: |
+    - what is it?
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - no
+    - not really
+    - no,what is it about?
+    - no,please tell about it.
+    - I didnt heard about it
+    - no however am also not working
+    - what is [careshield](company)
+    - what is this about?
+    - what [insurance firm](company)
+    - what are you talking about?
+    - what careshiled?
+    - Didn't get you
+    - Didn't understand you
+    - can you describe about it?
+    - can you explain furher?
+    - I am not aware of this
+
+- intent: deny
+  examples: |
+    - no
+    - No
+    - i dont want anymore
+    - I don't want
+
+- intent: not_interested
+  examples: |
+    - sorry,not interested
+    - no,thanks
+    - not interested
+    - I have my own agent
+    - no, thank you. I am not interested
+    - I don't want
+
+- intent: payable_info
+  examples: |
+    - how much will it be ?
+    - Will I need to pay any cash upon signing up?
+
+- intent: more_info
+  examples: |
+    - tell me more
+    - sure,tell me more
+    - can I find out more?
+    - can i know more
+    - can you tell in detail
+    - I want to know in brief
+
+- intent: mood_busy
+  examples: |
+    - busy
+    - am busy now,call later at [5 pm](time)
+    - busy right now
+    - in meeting.call at [10 am](time)
+    - I don't have time for the call now
+    - i will contact you later
+    - sorry,this isn't a good/convienent time to talk.
+    - Don't disturb me.
+    - I am at work
+    - am in middle of meeting.
+    - am unavaialble right now.
+    - not free at the moment
+    - can you call back?
+    - I am currently driving.
+
+- intent: don't_call_again
+  examples: |
+    - yes,I have been called by multiple by your company.Please don't call again.
+    - please don't call me again
+    - Please put me on your <do-not-call list> if possible, Thanks
+
+- intent: language_challenge
+  examples: |
+    - would you converse in [chinese](language)
+    - am not able to understand your language
+    - can you speak in other language
+
+- intent: waiting_list
+  examples: |
+    - let me think about it
+    - give me some time to think about it
+
+- intent: regarding_e-brochure
+  examples: |
+    - can you send e-brochure to my number
+    - can i have e-brochure
+    - Will it be alright to send an <e-brochure> to your whatsapp instead?
+
+- intent: not_eligible
+  examples: |
+    - I am not a singaporean
+    - I am not a local resident
+    - I am not above 67 years old
+    - I am 30 years old
+    - I am below 67 years old
+
+- intent: not_interested_conform
+  examples: |
+    - I am already covered with other insurance firm
+    - I am already a part of other insurance firm
+
+- intent: general_talk
+  examples: |
+    - it is okay
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: procedure_check
+  examples: |
+    - yes,what is the procedure to proceed?
+    - ok, how should i proceed?
+    - can i know how to proceed
+
+- lookup: language
+  examples: |
+    - english
+    - hindi
+    - french
+    - chinese
+    - spanish
+
+- synonym: company
+  examples: |
+    - lic
+    - insurance firm
+    - careshield
